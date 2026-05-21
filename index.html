@@ -1,747 +1,280 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-    <head>
-	<meta name="generator" content="Hugo 0.145.0"><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Example description">
-<title>NkkllS</title>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="NkkllS 的个人学术主页：研究方向、论文、项目、教学与联系方式。" />
+  <title>NkkllS | Academic Homepage</title>
+  <style>
+    :root {
+      --bg: #f4f7fc;
+      --surface: #ffffff;
+      --text: #172231;
+      --muted: #566479;
+      --primary: #1f4e9c;
+      --primary-2: #2b66c9;
+      --line: #d8e1ef;
+      --shadow: 0 12px 28px rgba(19, 48, 97, 0.08);
+      --max: 1040px;
+      --radius: 14px;
+    }
 
-<link rel='canonical' href='https://nkklls01.github.io/'>
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: "Inter", "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.7;
+    }
 
-<link rel="stylesheet" href="/scss/style.min.663803bebe609202d5b39d848f2d7c2dc8b598a2d879efa079fa88893d29c49c.css"><meta property='og:title' content="NkkllS">
-<meta property='og:description' content="Example description">
-<meta property='og:url' content='https://nkklls01.github.io/'>
-<meta property='og:site_name' content='NkkllS'>
-<meta property='og:type' content='website'><meta property='og:updated_time' content=' 2025-04-08T00:00:00&#43;00:00 '/>
-<meta name="twitter:title" content="NkkllS">
-<meta name="twitter:description" content="Example description"><link rel="alternate" type="application/rss&#43;xml" href="https://nkklls01.github.io/index.xml">
-    </head>
-    <body class="">
-    <script>
-        (function() {
-            const colorSchemeKey = 'StackColorScheme';
-            if(!localStorage.getItem(colorSchemeKey)){
-                localStorage.setItem(colorSchemeKey, "auto");
-            }
-        })();
-    </script><script>
-    (function() {
-        const colorSchemeKey = 'StackColorScheme';
-        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
-        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+    a { color: var(--primary-2); text-decoration: none; }
+    a:hover { text-decoration: underline; }
 
-        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
-            
+    .wrap { width: min(var(--max), 92vw); margin: 0 auto; }
 
-            document.documentElement.dataset.scheme = 'dark';
-        } else {
-            document.documentElement.dataset.scheme = 'light';
-        }
-    })();
-</script>
-<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
-    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
-        <span class="hamburger-box">
-            <span class="hamburger-inner"></span>
-        </span>
-    </button>
+    header {
+      color: #fff;
+      background: radial-gradient(circle at 85% 15%, rgba(255,255,255,.2) 0%, transparent 40%),
+                  linear-gradient(130deg, #13376f, #1f4e9c 55%, #2f6fd8 100%);
+      border-bottom: 6px solid #163f81;
+    }
 
-    <header>
-        
-            
-            <figure class="site-avatar">
-                <a href="/">
-                
-                    
-                    
-                    
-                        
-                        <img src="/img/avatar_hu_eedf2a665f2f74f7.png" width="300"
-                            height="300" class="site-logo" loading="lazy" alt="Avatar">
-                    
-                
-                </a>
-                
-                    <span class="emoji">🐈‍⬛</span>
-                
-            </figure>
-            
-        
-        
-        <div class="site-meta">
-            <h1 class="site-name"><a href="/">NkkllS</a></h1>
-            <h2 class="site-description">Welcome to my blog.</h2>
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: .9rem 0;
+      font-size: .95rem;
+      opacity: .95;
+    }
+
+    .nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .35rem;
+    }
+
+    .nav a {
+      color: #f2f6ff;
+      padding: .3rem .65rem;
+      border: 1px solid rgba(255,255,255,.25);
+      border-radius: 999px;
+      font-size: .88rem;
+    }
+
+    .hero { padding: 2.3rem 0 2.8rem; }
+    .hero h1 {
+      margin: 0 0 .7rem;
+      font-size: clamp(2rem, 3.8vw, 3rem);
+      line-height: 1.2;
+    }
+    .hero .subtitle { margin: 0; color: #e9f0ff; max-width: 72ch; }
+
+    .hero-meta {
+      margin-top: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: .7rem;
+    }
+
+    .badge {
+      background: rgba(255,255,255,.16);
+      border: 1px solid rgba(255,255,255,.32);
+      border-radius: 999px;
+      padding: .3rem .7rem;
+      font-size: .86rem;
+      color: #f2f6ff;
+    }
+
+    main { padding: 1.6rem 0 2.8rem; }
+
+    .section {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 1.2rem 1.25rem;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      margin: 0 0 .85rem;
+      color: var(--primary);
+      font-size: 1.3rem;
+      border-left: 4px solid var(--primary);
+      padding-left: .55rem;
+    }
+
+    .lead { color: var(--muted); margin: .3rem 0 0; }
+
+    .cols {
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 1rem;
+    }
+
+    .card {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: .95rem;
+      background: #fff;
+    }
+
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .5rem;
+      margin-top: .6rem;
+    }
+
+    .tag {
+      border: 1px solid #cfe0ff;
+      color: var(--primary);
+      background: #edf4ff;
+      border-radius: 999px;
+      padding: .3rem .65rem;
+      font-size: .84rem;
+      font-weight: 600;
+    }
+
+    .list { margin: 0; padding-left: 1.1rem; }
+    .list li { margin-bottom: .45rem; color: var(--muted); }
+    .list strong { color: var(--text); }
+
+    .project-grid {
+      display: grid;
+      gap: .9rem;
+      grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
+    }
+
+    .pub {
+      border-left: 3px solid #d3e2ff;
+      padding-left: .75rem;
+      margin-bottom: .65rem;
+    }
+
+    .note {
+      background: #f7faff;
+      border: 1px dashed #bfd5ff;
+      border-radius: 10px;
+      padding: .75rem .85rem;
+      color: #46639a;
+      font-size: .9rem;
+      margin-top: .7rem;
+    }
+
+    footer {
+      color: var(--muted);
+      text-align: center;
+      padding: .8rem 0 2rem;
+      font-size: .92rem;
+    }
+
+    @media (max-width: 860px) {
+      .cols { grid-template-columns: 1fr; }
+      .topbar { flex-direction: column; align-items: flex-start; gap: .6rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap topbar">
+      <div>Personal Academic Website</div>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#projects">Projects</a>
+        <a href="#publications">Publications</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+    <div class="wrap hero">
+      <h1>NkkllS（你的中文姓名）</h1>
+      <p class="subtitle">聚焦 AI 应用与软件工程实践，关注大模型应用落地、数据驱动开发与高质量工程交付。这个页面是面向学术/职业展示的主入口。</p>
+      <div class="hero-meta">
+        <span class="badge">Location: China / Singapore（可改）</span>
+        <span class="badge">Role: Student / Engineer（可改）</span>
+        <span class="badge">Updated: 2026-05-21</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="section" id="about">
+      <h2>About</h2>
+      <div class="cols">
+        <div class="card">
+          <p class="lead">你好，我是 <strong>NkkllS</strong>。目前主要研究与实践方向是将机器学习系统能力与后端工程能力结合，构建可维护、可复现、可扩展的智能应用。</p>
+          <ul class="list">
+            <li><strong>教育背景：</strong>填写你的学校 / 专业 / 年级。</li>
+            <li><strong>当前方向：</strong>LLM 应用开发、后端 API、数据处理流程。</li>
+            <li><strong>目标：</strong>产出高质量技术项目与公开可复现成果。</li>
+          </ul>
         </div>
-    </header><ol class="menu-social">
-            
-                <li>
-                    <a 
-                        href='https://github.com/nkklls01'
-                        target="_blank"
-                        title="GitHub"
-                        rel="me"
-                    >
-                        
-                        
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
-</svg>
-
-
-
-                        
-                    </a>
-                </li>
-            
-                <li>
-                    <a 
-                        href='https://x.com/nkklls01'
-                        target="_blank"
-                        title="Twitter"
-                        rel="me"
-                    >
-                        
-                        
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-  <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
-</svg>
-
-
-
-                        
-                    </a>
-                </li>
-            
-        </ol><ol class="menu" id="main-menu">
-        
-        
-        
-        <li  class='current' >
-            <a href='/' >
-                
-                
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <polyline points="5 12 3 12 12 3 21 12 19 12" />
-  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
-  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
-</svg>
-
-
-
-                
-                <span>Home</span>
-            </a>
-        </li>
-        
-        
-        <li >
-            <a href='/about/' >
-                
-                
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="12" cy="7" r="4" />
-  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
-</svg>
-
-
-
-                
-                <span>About</span>
-            </a>
-        </li>
-        
-        
-        <li >
-            <a href='/archives/' >
-                
-                
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <rect x="3" y="4" width="18" height="4" rx="2" />
-  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
-  <line x1="10" y1="12" x2="14" y2="12" />
-</svg>
-
-
-
-                
-                <span>Archives</span>
-            </a>
-        </li>
-        
-        
-        <li >
-            <a href='/search/' >
-                
-                
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="10" cy="10" r="7" />
-  <line x1="21" y1="21" x2="15" y2="15" />
-</svg>
-
-
-
-                
-                <span>Search</span>
-            </a>
-        </li>
-        
-        
-        <li >
-            <a href='/links/' >
-                
-                
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
-  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
-</svg>
-
-
-
-                
-                <span>Links</span>
-            </a>
-        </li>
-        
-        <li class="menu-bottom-section">
-            <ol class="menu">
-                    
-                        <li id="i18n-switch">  
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-  <path d="M4 5h7" />
-  <path d="M9 3v2c0 4.418 -2.239 8 -5 8" />
-  <path d="M5 9c-.003 2.144 2.952 3.908 6.7 4" />
-  <path d="M12 20l4 -9l4 9" />
-  <path d="M19.1 18h-6.2" />
-</svg>
-
-
-
-                            <select name="language" title="language" onchange="window.location.href = this.selectedOptions[0].value">
-                                
-                                    <option value="https://nkklls01.github.io/" selected>English</option>
-                                
-                                    <option value="https://nkklls01.github.io/zh-cn/" >中文</option>
-                                
-                                    <option value="https://nkklls01.github.io/ar/" >عربي</option>
-                                
-                            </select>
-                        </li>
-                    
-                
-
-                
-                    <li id="dark-mode-toggle">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="8" cy="12" r="2" />
-  <rect x="2" y="6" width="20" height="12" rx="6" />
-</svg>
-
-
-
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="16" cy="12" r="2" />
-  <rect x="2" y="6" width="20" height="12" rx="6" />
-</svg>
-
-
-
-                        <span>Dark Mode</span>
-                    </li>
-                
-            </ol>
-        </li>
-    </ol>
-</aside>
-
-    <aside class="sidebar right-sidebar sticky">
-        
-            
-                <form action="/search/" class="search-form widget" >
-        <p>
-            <label>Search</label>
-            <input name="keyword" required placeholder="Type something..." />
-        
-            <button title="Search">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="10" cy="10" r="7" />
-  <line x1="21" y1="21" x2="15" y2="15" />
-</svg>
-
-
-
-            </button>
-        </p>
-    </form>
-            
-        
-            
-                <section class="widget archives">
-        <div class="widget-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-infinity" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <path d="M9.828 9.172a4 4 0 1 0 0 5.656 a10 10 0 0 0 2.172 -2.828a10 10 0 0 1 2.172 -2.828 a4 4 0 1 1 0 5.656a10 10 0 0 1 -2.172 -2.828a10 10 0 0 0 -2.172 -2.828" />
-</svg>
-
-
-
-        </div>
-        <h2 class="widget-title section-title">Archives</h2>
-
-        
-        
-        
-        
-        
-        <div class="widget-archive--list">
-            <div class="archives-year">
-                    <a href="/archives/#2025">
-                        
-                            <span class="year">2025</span>
-                            <span class="count">4</span>
-                        
-                    </a> 
-                </div>
-            <div class="archives-year">
-                    <a href="/archives/#2019">
-                        
-                            <span class="year">2019</span>
-                            <span class="count">1</span>
-                        
-                    </a> 
-                </div>
-            
-        </div>
+        <aside class="card">
+          <h3 style="margin-top:0">Quick Facts</h3>
+          <ul class="list">
+            <li>可用语言：中文 / English</li>
+            <li>技术栈：Python, TypeScript, FastAPI, Next.js</li>
+            <li>兴趣：AI 产品化、开发效率工具、知识工程</li>
+          </ul>
+        </aside>
+      </div>
     </section>
-            
-        
-            
-                <section class="widget tagCloud">
-    <div class="widget-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <line x1="5" y1="9" x2="19" y2="9" />
-  <line x1="5" y1="15" x2="19" y2="15" />
-  <line x1="11" y1="4" x2="7" y2="20" />
-  <line x1="17" y1="4" x2="13" y2="20" />
-</svg>
 
-
-
-    </div>
-    <h2 class="widget-title section-title">Categories</h2>
-
-    <div class="tagCloud-tags">
-        
-            <a href="/categories/syntax/" class="font_size_5">
-                Syntax
-            </a>
-        
-            <a href="/categories/themes/" class="font_size_1">
-                Themes
-            </a>
-        
-    </div>
-</section>
-
-            
-        
-    </aside>
-
-
-            <main class="main full-width">
-    
-    
-    
-    
-
-    <section class="article-list">
-        
-            
-<article class="">
-    <header class="article-header">
-
-    <div class="article-details">
-    
-    <header class="article-category">
-        
-            <a href="/categories/syntax/" >
-                Syntax
-            </a>
-        
-    </header>
-    
-
-    <div class="article-title-wrapper">
-        <h2 class="article-title">
-            <a href="/p/class002-note/">Class002 Note</a>
-        </h2>
-    
-        
-        <h3 class="article-subtitle">
-            The Algorithm Note
-        </h3>
-        
-    </div>
-
-    
-    
-    
-    
-    <footer class="article-time">
-        
-            <div>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
-  <circle cx="18" cy="18" r="4" />
-  <path d="M15 3v4" />
-  <path d="M7 3v4" />
-  <path d="M3 11h16" />
-  <path d="M18 16.496v1.504l1 1" />
-</svg>
-                <time class="article-time--published">Apr 08, 2025</time>
-            </div>
-        
-
-        
-    </footer>
-    
-
-    
-</div>
-
-</header>
-</article>
-        
-            
-<article class="has-image">
-    <header class="article-header">
-        <div class="article-image">
-            <a href="/p/fastapi-note/">
-                <img src="/p/fastapi-note/FastAPI_hu_f051145a098d44db.webp"
-                        srcset="/p/fastapi-note/FastAPI_hu_f051145a098d44db.webp 800w, /p/fastapi-note/FastAPI_hu_4748245eaa2ea7e.webp 1600w"
-                        width="800" 
-                        height="336" 
-                        loading="lazy"
-                        alt="Featured image of post FastAPI Note" />
-                
-            </a>
-        </div>
-    
-
-    <div class="article-details">
-    
-    <header class="article-category">
-        
-            <a href="/categories/syntax/" >
-                Syntax
-            </a>
-        
-    </header>
-    
-
-    <div class="article-title-wrapper">
-        <h2 class="article-title">
-            <a href="/p/fastapi-note/">FastAPI Note</a>
-        </h2>
-    
-        
-        <h3 class="article-subtitle">
-            The FastAPI Note During SimTech Internship
-        </h3>
-        
-    </div>
-
-    
-    
-    
-    
-    <footer class="article-time">
-        
-            <div>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
-  <circle cx="18" cy="18" r="4" />
-  <path d="M15 3v4" />
-  <path d="M7 3v4" />
-  <path d="M3 11h16" />
-  <path d="M18 16.496v1.504l1 1" />
-</svg>
-                <time class="article-time--published">Apr 07, 2025</time>
-            </div>
-        
-
-        
-    </footer>
-    
-
-    
-</div>
-
-</header>
-</article>
-        
-            
-<article class="has-image">
-    <header class="article-header">
-        <div class="article-image">
-            <a href="/p/nextjs-note/">
-                <img src="/p/nextjs-note/NextJS_hu_de2b0c95aaa8d5f.webp"
-                        srcset="/p/nextjs-note/NextJS_hu_de2b0c95aaa8d5f.webp 800w, /p/nextjs-note/NextJS_hu_1fbf3e8af1b32377.webp 1600w"
-                        width="800" 
-                        height="226" 
-                        loading="lazy"
-                        alt="Featured image of post NextJS Note" />
-                
-            </a>
-        </div>
-    
-
-    <div class="article-details">
-    
-    <header class="article-category">
-        
-            <a href="/categories/syntax/" >
-                Syntax
-            </a>
-        
-    </header>
-    
-
-    <div class="article-title-wrapper">
-        <h2 class="article-title">
-            <a href="/p/nextjs-note/">NextJS Note</a>
-        </h2>
-    
-        
-        <h3 class="article-subtitle">
-            The NextJS Note During SimTech Internship
-        </h3>
-        
-    </div>
-
-    
-    
-    
-    
-    <footer class="article-time">
-        
-            <div>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
-  <circle cx="18" cy="18" r="4" />
-  <path d="M15 3v4" />
-  <path d="M7 3v4" />
-  <path d="M3 11h16" />
-  <path d="M18 16.496v1.504l1 1" />
-</svg>
-                <time class="article-time--published">Apr 07, 2025</time>
-            </div>
-        
-
-        
-    </footer>
-    
-
-    
-</div>
-
-</header>
-</article>
-        
-            
-<article class="has-image">
-    <header class="article-header">
-        <div class="article-image">
-            <a href="/p/reactjs-note/">
-                <img src="/p/reactjs-note/ReactJS_hu_ec28697af3e68cd7.png"
-                        srcset="/p/reactjs-note/ReactJS_hu_ec28697af3e68cd7.png 800w, /p/reactjs-note/ReactJS_hu_acc8c85f86178778.png 1600w"
-                        width="800" 
-                        height="431" 
-                        loading="lazy"
-                        alt="Featured image of post ReactJS Note" />
-                
-            </a>
-        </div>
-    
-
-    <div class="article-details">
-    
-    <header class="article-category">
-        
-            <a href="/categories/syntax/" >
-                Syntax
-            </a>
-        
-    </header>
-    
-
-    <div class="article-title-wrapper">
-        <h2 class="article-title">
-            <a href="/p/reactjs-note/">ReactJS Note</a>
-        </h2>
-    
-        
-        <h3 class="article-subtitle">
-            The ReactJS Note During SimTech Internship
-        </h3>
-        
-    </div>
-
-    
-    
-    
-    
-    <footer class="article-time">
-        
-            <div>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
-  <circle cx="18" cy="18" r="4" />
-  <path d="M15 3v4" />
-  <path d="M7 3v4" />
-  <path d="M3 11h16" />
-  <path d="M18 16.496v1.504l1 1" />
-</svg>
-                <time class="article-time--published">Apr 07, 2025</time>
-            </div>
-        
-
-        
-    </footer>
-    
-
-    
-</div>
-
-</header>
-</article>
-        
-            
-<article class="has-image">
-    <header class="article-header">
-        <div class="article-image">
-            <a href="/p/markdown-syntax-guide/">
-                <img src="/p/markdown-syntax-guide/pawel-czerwinski-8uZPynIu-rQ-unsplash_hu_c86b681f3fee94ff.jpg"
-                        srcset="/p/markdown-syntax-guide/pawel-czerwinski-8uZPynIu-rQ-unsplash_hu_c86b681f3fee94ff.jpg 800w, /p/markdown-syntax-guide/pawel-czerwinski-8uZPynIu-rQ-unsplash_hu_bea442a1395058f4.jpg 1600w"
-                        width="800" 
-                        height="534" 
-                        loading="lazy"
-                        alt="Featured image of post Markdown Syntax Guide" />
-                
-            </a>
-        </div>
-    
-
-    <div class="article-details">
-    
-    <header class="article-category">
-        
-            <a href="/categories/themes/" >
-                Themes
-            </a>
-        
-            <a href="/categories/syntax/" >
-                Syntax
-            </a>
-        
-    </header>
-    
-
-    <div class="article-title-wrapper">
-        <h2 class="article-title">
-            <a href="/p/markdown-syntax-guide/">Markdown Syntax Guide</a>
-        </h2>
-    
-        
-        <h3 class="article-subtitle">
-            Sample article showcasing basic Markdown syntax and formatting for HTML elements.
-        </h3>
-        
-    </div>
-
-    
-    
-    
-    
-    <footer class="article-time">
-        
-            <div>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
-  <circle cx="18" cy="18" r="4" />
-  <path d="M15 3v4" />
-  <path d="M7 3v4" />
-  <path d="M3 11h16" />
-  <path d="M18 16.496v1.504l1 1" />
-</svg>
-                <time class="article-time--published">Mar 11, 2019</time>
-            </div>
-        
-
-        
-    </footer>
-    
-
-    
-</div>
-
-</header>
-</article>
-        
+    <section class="section" id="research">
+      <h2>Research Interests</h2>
+      <p class="lead">以下为当前关注主题，后续会根据论文阅读和项目实践持续迭代。</p>
+      <div class="tag-list">
+        <span class="tag">Large Language Model Applications</span>
+        <span class="tag">Machine Learning Systems</span>
+        <span class="tag">Data-centric AI</span>
+        <span class="tag">Backend Reliability</span>
+        <span class="tag">Developer Productivity</span>
+      </div>
     </section>
-<footer class="site-footer">
-    <section class="copyright">
-        &copy; 
-        
-            2024 - 
-        
-        2025 NkkllS
+
+    <section class="section" id="projects">
+      <h2>Selected Projects</h2>
+      <div class="project-grid">
+        <article class="card">
+          <h3 style="margin-top:0">Project 01 · LLM Service Playground</h3>
+          <p class="lead">一个用于验证 Prompt、工具调用、评测基线的实验平台（可附 GitHub 链接）。</p>
+        </article>
+        <article class="card">
+          <h3 style="margin-top:0">Project 02 · Personal Knowledge System</h3>
+          <p class="lead">将技术笔记、实验记录、索引标签统一结构化，提升复盘与检索效率。</p>
+        </article>
+        <article class="card">
+          <h3 style="margin-top:0">Project 03 · API Reliability Toolkit</h3>
+          <p class="lead">沉淀接口监控、回归测试、错误分级策略，用于稳定上线流程。</p>
+        </article>
+      </div>
+      <div class="note">提示：把每个项目替换为真实项目名 + 1 句贡献 + 1 个链接，会明显提升主页专业度。</div>
     </section>
-    
-    <section class="powerby">
-        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
-        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.27.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+
+    <section class="section" id="publications">
+      <h2>Publications & Writing</h2>
+      <div class="pub"><strong>[In Progress]</strong> Paper / Technical Report Title A. Venue / Year.</div>
+      <div class="pub"><strong>[In Progress]</strong> Paper / Technical Report Title B. Venue / Year.</div>
+      <div class="pub"><strong>Blog & Notes:</strong> 技术博客与学习笔记整理中，未来将按主题归档。</div>
+      <div class="note">如果你提供论文题目、作者顺序、会议期刊、年份，我可以直接帮你排成标准学术引用格式（APA/IEEE/ACM）。</div>
     </section>
-</footer>
 
-            </main>
-        </div>
-        <script 
-                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
-                
-                >
-            </script><script type="text/javascript" src="/ts/main.js" defer></script>
-<script>
-    (function () {
-        const customFont = document.createElement('link');
-        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+    <section class="section" id="contact">
+      <h2>Contact</h2>
+      <ul class="list">
+        <li>GitHub: <a href="https://github.com/nkklls01" target="_blank" rel="noopener">github.com/nkklls01</a></li>
+        <li>X / Twitter: <a href="https://x.com/nkklls01" target="_blank" rel="noopener">x.com/nkklls01</a></li>
+        <li>Email: your-email@example.com（待替换）</li>
+      </ul>
+    </section>
+  </main>
 
-        customFont.type = "text/css";
-        customFont.rel = "stylesheet";
-
-        document.head.appendChild(customFont);
-    }());
-</script>
-
-    </body>
+  <footer>
+    © 2026 NkkllS · Academic Homepage. Last updated on May 21, 2026.
+  </footer>
+</body>
 </html>
