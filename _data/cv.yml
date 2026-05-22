@@ -1,0 +1,110 @@
+cv:
+  name: Zijie Gao
+  label: AI Systems Student & Research Intern
+  email: nkklls01@gmail.com
+  location: Singapore
+  image: ""
+  summary: >
+    Master of Technology student in Artificial Intelligence Systems at NUS-ISS.
+    Research intern at SMART working on multimodal generative AI, world models, and spatial intelligence.
+
+  social_networks:
+    - network: GitHub
+      username: NkkllS01
+    - network: LinkedIn
+      username: zijie-gao-162284358
+
+  sections:
+    Education:
+      - institution: National University of Singapore
+        location: Singapore
+        area: Artificial Intelligence Systems
+        studyType: Master of Technology
+        start_date: 2024-08
+        end_date: 2026-09
+        highlights:
+          - "Graduate Diploma in Systems Analysis (completed during program)"
+          - "Relevant coursework: Intelligent Sensing Systems, Practical Language Processing, Intelligent Reasoning Systems, Pattern Recognition Systems"
+
+      - institution: Xiamen University
+        location: China
+        area: Digital Media Technology
+        studyType: Bachelor
+        start_date: 2020-09
+        end_date: 2024-06
+        highlights:
+          - "School of Computer Technology"
+          - "Relevant coursework: Computer Graphics, Human-Computer Interaction, Data Structures and Algorithms"
+
+    Experience:
+      - company: Singapore-MIT Alliance for Research and Technology (SMART)
+        position: Research Intern (Multimodal GenAI and World Models)
+        location: Singapore
+        start_date: 2026-03
+        end_date: ""
+        summary: Research on multimodal generative AI, diffusion models, and spatial intelligence for remote sensing applications.
+        highlights:
+          - "Constructed a multimodal generative framework integrating satellite imagery and urban energy data using diffusion-based models and ControlNet conditioning"
+          - "Built and processed large-scale multi-city datasets (MUSE), aligning satellite images with energy consumption labels"
+          - "Conducted downstream experiments to evaluate synthetic data effectiveness for semantic segmentation under limited real-data regimes"
+          - "Contributed to ongoing research including model design, ablation studies, and experimental validation"
+
+      - company: A*STAR - Singapore Institute of Manufacturing Technology (SIMTech)
+        position: Software Engineer Intern
+        location: Singapore
+        start_date: 2025-03
+        end_date: 2025-08
+        summary: Backend and full-stack development for a data-intensive sustainability platform.
+        highlights:
+          - "Developed backend and full-stack modules for a Life Cycle Assessment platform"
+          - "Improved LCA computation runtime through sparse matrix optimisation and data caching strategies"
+          - "Built scalable API and data processing components using FastAPI, PostgreSQL, and AWS Lambda"
+
+    Skills:
+      - name: Multimodal & Generative AI
+        level: ""
+        icon: fa-solid fa-brain
+        keywords: "Diffusion Models, Vision-Language Models, ControlNet, Representation Learning, World Models"
+
+      - name: Machine Learning
+        level: ""
+        icon: fa-solid fa-robot
+        keywords: "PyTorch, TensorFlow, Hugging Face Transformers, Model Training & Evaluation, Semantic Segmentation"
+
+      - name: LLM / NLP
+        level: ""
+        icon: fa-solid fa-language
+        keywords: "RAG, LoRA/PEFT, LangChain, OpenAI API"
+
+      - name: ML Engineering
+        level: ""
+        icon: fa-solid fa-gears
+        keywords: "Experiment tracking, Reproducible training pipelines, W&B, Linux, Multi-GPU training, Dataset preprocessing"
+
+      - name: Backend / Systems
+        level: ""
+        icon: fa-solid fa-server
+        keywords: "Python, FastAPI, PostgreSQL, SQLAlchemy, REST APIs, AWS Lambda"
+
+      - name: Frontend / Full-stack
+        level: ""
+        icon: fa-solid fa-code
+        keywords: "React, Next.js, TypeScript, Tailwind CSS, shadcn/ui"
+
+      - name: Tools
+        level: ""
+        icon: fa-solid fa-screwdriver-wrench
+        keywords: "Git, GitHub, VS Code, Docker, n8n"
+
+    Interests:
+      - name: Multimodal Generative AI
+        icon: fa-solid fa-robot
+        keywords: "World models, diffusion models, vision-language models"
+
+      - name: Spatial Intelligence
+        icon: fa-solid fa-globe
+        keywords: "Remote sensing, geospatial analysis, urban modeling"
+
+      - name: AI Systems
+        icon: fa-solid fa-microchip
+        keywords: "Reproducible research, ML pipelines, scalable training"
