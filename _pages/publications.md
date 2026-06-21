@@ -9,17 +9,11 @@ nav_order: 4
 
 ## Publications
 
-Selected publications will be updated here once available.
+Publication details will be updated after the work is publicly available.
 
-## Manuscripts / Research in Progress
+## Research Titles
 
-The following manuscripts are currently under development:
+- **Diffusion-Based Multimodal Generative Modeling for Multi-City Remote Sensing and Urban Energy Data**
+- **Multimodal Emotion Supervision System with Cross-Modal Fusion**
 
-- **Diffusion-Based Multimodal Generative Modeling for Multi-City Remote Sensing and Urban Energy Data** — MUSE2-related research on diffusion models, ControlNet conditioning, synthetic data generation, and downstream semantic segmentation evaluation.
-- **Multimodal Emotion Supervision System with Cross-Modal Fusion** — Audio-visual emotion recognition integrating ResNet18, WavLM, and cross-attention fusion with comparative fusion strategy experiments.
-
-## Technical Reports / Project Reports
-
-Technical reports and project write-ups will be added here as they become available.
-
-{% bibliography %}
+Full venue information, abstracts, and links will be added once available.

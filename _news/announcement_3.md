@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Started the **Master of Technology in Artificial Intelligence Systems** program at NUS (Aug 2024 – Sep 2026).
+Started the **Master of Technology in Artificial Intelligence Systems** program at NUS-ISS (Aug 2024 - Sep 2026).

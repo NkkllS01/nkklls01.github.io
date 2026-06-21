@@ -3,7 +3,7 @@ layout: about
 title: about
 permalink: /
 subtitle: >
-  AI Systems Student | Multimodal Generative AI | World Models | Spatial Intelligence
+  Multimodal Foundation Models | Diffusion Models | Spatial Intelligence
 
 profile:
   align: right
@@ -27,12 +27,23 @@ latest_posts:
   limit: 3
 ---
 
-I am a Master of Technology student in [Artificial Intelligence Systems](https://www.iss.nus.edu.sg/) at NUS-ISS and a research intern at [SMART M3S](https://smart.mit.edu/research/m3s/about-m3s) (Singapore-MIT Alliance for Research and Technology).
+I am a Master of Technology student in [Artificial Intelligence Systems](https://www.iss.nus.edu.sg/) at NUS-ISS and a Research Intern at [SMART M3S](https://smart.mit.edu/research/m3s/about-m3s) (Singapore-MIT Alliance for Research and Technology). My goal is to grow into a **multimodal foundation-model algorithm engineer**, with a focus on generative modeling, vision-language learning, and reproducible AI research systems.
 
-My current research interests lie in **multimodal generative AI**, **world models**, **vision-language models**, **diffusion models**, and **spatial intelligence**. I am particularly interested in building reproducible AI research systems that connect generative models with real-world visual, spatial, and environmental applications.
+**Current Focus**
 
-I work on multimodal generative models, world models, vision-language systems, and AI systems for spatial and remote-sensing applications. My current work focuses on reproducing and evaluating state-of-the-art generative models, building reproducible experimental pipelines, and connecting generative models with downstream tasks such as segmentation and spatial understanding.
+- Multimodal generative AI for remote sensing, urban data, and spatial intelligence.
+- Diffusion models, ControlNet-style conditioning, and synthetic data generation.
+- Downstream evaluation through semantic segmentation and limited-real-data training.
+- Vision-language models and world models for richer spatial understanding.
 
-Previously, I worked as a Software Engineer Intern on a sustainability / Life Cycle Assessment platform at [A\*STAR SIMTech](https://www.a-star.edu.sg/simtech) (Mar 2025 – Aug 2025), where I developed backend, database, and computational modules. I hold a Bachelor's degree in Digital Media Technology from [Xiamen University](https://www.xmu.edu.cn/).
+**Current Project**
+
+I am currently working on the **MUSE2 diffusion project**, which studies how diffusion models can integrate satellite imagery with urban energy and spatial signals. The project focuses on reproducible data pipelines, multi-city dataset construction, generative model evaluation, and downstream segmentation experiments.
+
+**Engineering Strengths**
+
+- Reproducible ML experiments, ablation studies, dataset processing, and multi-GPU training workflows.
+- Practical tooling with PyTorch, Hugging Face, MMSegmentation, Mask2Former, W&B, Linux, and Git.
+- ML engineering experience connecting research models with reliable experimental pipelines.
 
 **Research Keywords:** Multimodal Generative AI, World Models, Diffusion Models, Vision-Language Models, Spatial Intelligence, Remote Sensing AI, AI Systems, ML Engineering
