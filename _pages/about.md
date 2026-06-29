@@ -3,7 +3,7 @@ layout: about
 title: about
 permalink: /
 subtitle: >
-  Multimodal Foundation Models | Diffusion Models | Spatial Intelligence
+  Multimodal Large Models | Computer Vision | Generative & Diffusion Models | Multimodal Fusion
 
 profile:
   align: right
@@ -27,18 +27,18 @@ latest_posts:
   limit: 3
 ---
 
-I am a Master of Technology student in [Artificial Intelligence Systems](https://www.iss.nus.edu.sg/) at NUS-ISS and a Research Intern at [SMART M3S](https://smart.mit.edu/research/m3s/about-m3s) (Singapore-MIT Alliance for Research and Technology). My goal is to grow into a **multimodal foundation-model algorithm engineer**, with a focus on generative modeling, vision-language learning, and reproducible AI research systems.
+I am a Master of Technology student in [Artificial Intelligence Systems](https://www.iss.nus.edu.sg/) at NUS-ISS and a Research Intern at [SMART M3S](https://smart.mit.edu/research/m3s/about-m3s) (Singapore-MIT Alliance for Research and Technology). My goal is to grow into a **multimodal large-model and computer-vision algorithm engineer**, focusing on multimodal large models (MLLMs), computer vision, generative & diffusion models, and multimodal fusion.
 
 **Current Focus**
 
-- Multimodal generative AI for remote sensing, urban data, and spatial intelligence.
-- Diffusion models, ControlNet-style conditioning, and synthetic data generation.
-- Downstream evaluation through semantic segmentation and limited-real-data training.
-- Vision-language models and world models for richer spatial understanding.
+- Multimodal large models (MLLMs) and vision-language understanding.
+- Computer vision: visual representation learning, perception, and recognition.
+- Generative & diffusion models for multimodal, satellite, and urban data.
+- Multimodal fusion across vision, audio, and language for robust perception.
 
 **Current Project**
 
-I am currently working on the **MUSE2 diffusion project**, which studies how diffusion models can integrate satellite imagery with urban energy and spatial signals. The project focuses on reproducible data pipelines, multi-city dataset construction, generative model evaluation, and downstream segmentation experiments.
+I am currently working on **DySENSE** (Dynamic Satellite-based ENergy Synthesis for Sustainable Environment with Climate), a diffusion-based multimodal generative project that integrates satellite imagery with urban energy and climate signals. The work spans reproducible data pipelines, multi-city dataset construction, generative model evaluation, and downstream segmentation experiments.
 
 **Engineering Strengths**
 
@@ -46,4 +46,4 @@ I am currently working on the **MUSE2 diffusion project**, which studies how dif
 - Practical tooling with PyTorch, Hugging Face, MMSegmentation, Mask2Former, W&B, Linux, and Git.
 - ML engineering experience connecting research models with reliable experimental pipelines.
 
-**Research Keywords:** Multimodal Generative AI, World Models, Diffusion Models, Vision-Language Models, Spatial Intelligence, Remote Sensing AI, AI Systems, ML Engineering
+**Research Keywords:** Multimodal Large Models (MLLMs), Comp

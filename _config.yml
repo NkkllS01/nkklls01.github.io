@@ -9,11 +9,11 @@ last_name: Gao
 contact_note: >
   Feel free to reach out via email at nkklls01@gmail.com for research discussions or collaboration.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  AI Systems student working on Multimodal Generative AI, World Models, and Spatial Intelligence.
+  AI Systems student working on multimodal large models, computer vision, and generative & diffusion models.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-keywords: multimodal-generative-ai, world-models, spatial-intelligence, vision-language-models, diffusion-models, ai-systems, academic-website
+keywords: multimodal-large-models, computer-vision, generative-diffusion-models, multimodal-fusion, vision-language-models, remote-sensing-ai, ai-systems, academic-website
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 🔬 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
@@ -92,7 +92,7 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # -----------------------------------------------------------------------------
 
 blog_name: Research Notes # blog_name will be displayed in your blog page
-blog_description: Notes on multimodal AI, diffusion models, remote sensing, and AI systems
+blog_description: Notes on multimodal large models, computer vision, generative & diffusion models, and AI systems
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
@@ -646,8 +646,4 @@ jsonresume:
   - projects
   - volunteer
   - awards
-  - certificates
-  - skills
-  - languages
-  - interests
-  - references
+  - certifi

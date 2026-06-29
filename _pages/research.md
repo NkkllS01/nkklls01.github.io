@@ -7,36 +7,34 @@ nav: true
 nav_order: 2
 ---
 
-My research centers on multimodal generative AI, world models, and spatial intelligence. I am interested in how generative models can integrate vision, language, video, and structured data to support richer world understanding and generation. Below are my main research directions.
+My research centers on **multimodal large models** and **computer vision**, with supporting interests in **generative & diffusion models** and **multimodal fusion**. I am interested in how models can integrate vision, language, and audio to perceive, understand, and generate the world more reliably. Below are my main research directions.
 
 ---
 
-## Multimodal Generative AI and World Models
+## Multimodal Large Models and Vision-Language Understanding
 
-I am interested in models that integrate vision, language, video, and structured data to support richer world understanding and generation. My current work explores how multimodal generative models and world models can be evaluated through downstream perception and spatial reasoning tasks.
+I study multimodal large models (MLLMs) and vision-language learning — how visual and textual signals can be aligned and reasoned over for real-world understanding tasks. I am interested in scaling, alignment, and evaluation of multimodal models on perception and reasoning.
 
-**Keywords:** multimodal learning, world models, generative AI, video generation, spatial reasoning
-
----
-
-## Diffusion Models for Remote Sensing and Spatial Intelligence
-
-I work with diffusion-based generative models for satellite imagery and city-scale visual data. I am interested in synthetic data generation, domain gap analysis, and downstream evaluation using semantic segmentation.
-
-**Keywords:** diffusion models, remote sensing, satellite imagery, synthetic data, semantic segmentation, spatial intelligence
+**Keywords:** multimodal large models, MLLMs, vision-language models, multimodal alignment, visual reasoning
 
 ---
 
-## Vision-Language Models and MLLMs
+## Computer Vision and Multimodal Fusion
 
-I am interested in vision-language learning, multimodal alignment, and the use of large multimodal models for real-world visual understanding tasks.
+I work on computer vision and cross-modal fusion: visual representation learning, perception, and recognition, and how complementary modalities (vision, audio, language) can be fused for robust prediction. My audio-visual emotion recognition work explores gated and cross-attention fusion for joint multimodal representation learning.
 
-**Keywords:** vision-language models, multimodal large language models, visual understanding, multimodal alignment
+**Keywords:** computer vision, visual perception, multimodal fusion, cross-attention, audio-visual learning, affective computing
+
+---
+
+## Generative and Diffusion Models for Remote Sensing and Spatial Data
+
+I work with diffusion-based generative models for satellite imagery and city-scale visual data, including synthetic data generation, domain-gap analysis, and downstream evaluation through semantic segmentation under limited real-data regimes.
+
+**Keywords:** diffusion models, generative AI, remote sensing, satellite imagery, synthetic data, semantic segmentation
 
 ---
 
 ## AI Systems and ML Engineering
 
-I care about reproducible experiments, scalable training pipelines, data processing, model evaluation, and the engineering infrastructure required to turn AI research ideas into working systems.
-
-**Keywords:** reproducible research, ML pipelines, experiment tracking, multi-GPU training, model evaluation
+I care about reproducible experiments, scalable 

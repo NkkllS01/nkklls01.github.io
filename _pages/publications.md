@@ -13,7 +13,5 @@ Publication details will be updated after the work is publicly available.
 
 ## Research Titles
 
-- **Diffusion-Based Multimodal Generative Modeling for Multi-City Remote Sensing and Urban Energy Data**
-- **Multimodal Emotion Supervision System with Cross-Modal Fusion**
-
-Full venue information, abstracts, and links will be added once available.
+- **DySENSE: Dynamic Satellite-based Energy Synthesis for Sustainable Environment with Climate** — diffusion-based multimodal generative modeling for multi-city remote sensing and urban energy data. *(Manuscript under submission to KDD.)*
+- **Multimodal At
