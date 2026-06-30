@@ -89,41 +89,26 @@ ninja.data = [{
           section: "News",},{id: "news-joined-smart-m3s-singapore-mit-alliance-for-research-and-technology-as-a-research-intern-working-on-multimodal-generative-ai-world-models-and-diffusion-based-remote-sensing-research",
           title: 'Joined SMART M3S (Singapore-MIT Alliance for Research and Technology) as a Research Intern,...',
           description: "",
-          section: "News",},{id: "projects-muse2-multimodal-generative-modeling-and-segmentation-evaluation",
-          title: 'MUSE2 Multimodal Generative Modeling and Segmentation Evaluation',
-          description: "Multimodal generative framework integrating satellite imagery and urban energy data using diffusion models and ControlNet, with downstream segmentation evaluation.",
+          section: "News",},{id: "projects-dysense-dynamic-satellite-based-energy-synthesis-for-sustainable-environment-with-climate",
+          title: 'DySENSE: Dynamic Satellite-based Energy Synthesis for Sustainable Environment with Climate',
+          description: "A text-conditioned joint image–label diffusion model that generates paired satellite images and segmentation masks from land-use and climate prompts, used to improve urban-energy semantic segmentation under limited real data.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_jodiffusion/";
-            },},{id: "projects-remote-sensing-generative-modeling",
-          title: 'Remote Sensing Generative Modeling',
-          description: "Explored research ideas connecting satellite imagery, climate variables, geospatial coordinates, and generative modeling for city-scale analysis.",
+            },},{id: "projects-multimodal-attention-fusion-for-audio-visual-emotion-recognition",
+          title: 'Multimodal Attention Fusion for Audio-Visual Emotion Recognition',
+          description: "An audio-visual emotion recognition framework that fuses speech and facial cues through gated fusion and cross-attention, evaluated on RAVDESS.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/2_remote_sensing/";
+              window.location.href = "/projects/2_emotion_recognition/";
             },},{id: "projects-sustainability-platform-life-cycle-assessment-system",
           title: 'Sustainability Platform / Life Cycle Assessment System',
           description: "Backend and full-stack development for a data-intensive Life Cycle Assessment platform at A*STAR SIMTech.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_lca_platform/";
-            },},{id: "projects-multimodal-emotion-recognition-system",
-          title: 'Multimodal Emotion Recognition System',
-          description: "Audio-visual emotion recognition with ResNet18, WavLM, and cross-attention fusion for joint multimodal representation learning.",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/4_emotion_recognition/";
-            },},{id: "projects-llm-based-repository-understanding-and-documentation-workflow",
-          title: 'LLM-Based Repository Understanding and Documentation Workflow',
-          description: "Explored an LLM-powered workflow for understanding, indexing, and documenting code repositories.",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/5_llm_repo_understanding/";
-            },},{id: "projects-object-detection-and-multi-object-tracking-experiments",
-          title: 'Object Detection and Multi-Object Tracking Experiments',
-          description: "Worked on computer vision detection and tracking pipelines using RT-DETR, BoxMOT, and HybridSORT.",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/6_object_detection/";
             },},{id: "projects-smart-replenishment-for-store-managers",
           title: 'Smart Replenishment for Store Managers',
           description: "Explainable AI workflow combining demand forecasting and Chain-of-Thought reasoning for inventory decision support.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/7_smart_replenishment/";
+              window.location.href = "/projects/4_smart_replenishment/";
             },},{
         id: 'social-email',
         title: 'email',
